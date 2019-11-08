@@ -1,0 +1,22 @@
+<body>
+        
+
+<head>
+</head>
+<div class="container">
+        <h1>Sapevi già programmare prima di partecipare a Young Talent In Action?</h1>
+        <label class="btn btn-primary"  aria-pressed="true" role="button">
+                <input name="options"[(ngModel)]="options" type="radio" [value]="true" [checked]="options"/> SI
+        </label>
+        <label class="btn btn-primary"  aria-pressed="true">
+                        <input name="options"[(ngModel)]="options" type="radio" [value]="false" [checked]="!options"/> NO
+                </label>
+
+       
+</div>
+
+<app-yesform *ngIf="options"></app-yesform>
+<app-noform *ngIf="!options"></app-noform>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>

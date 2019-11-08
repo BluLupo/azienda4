@@ -1,0 +1,27 @@
+<!--FORM 2 , SELECT NO-->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems, options);
+  });
+  var instance = M.FormSelect.getInstance(elem);
+</script>
+<div class="container" *ngIf="!options">
+        <form [formGroup]="profileForms" (ngSubmit)="onSubmit()">
+         <script>
+
+                </script>               
+                        <h4>Qual è stata la motivazione che ti ha spinto a partecipare a partecipare a Young
+                                Talent In Action?</h4>
+                          <div class="form-group">
+                                <label for="textarea_poll_noform">Suggerimenti</label>
+                                <textarea formControlName="textarea_poll_noform" class="materialize-textarea" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
+                              <h4>Quale strumento hai trovato più difficoltoso fra quelli utilizzati durante Young Talent
+                                    In Action?</h4>
+                                <app-selection></app-selection>
+                                <br />
+                <button type="submit" class="waves-effect waves-light btn-large"
+                [disabled]="!profileForms.valid">Invia</button>
+    </form>
+</div>

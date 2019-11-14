@@ -16,7 +16,6 @@ import {MatSelectModule} from '@angular/material/select';
 import { HttpClientModule } from '@angular/common/http';
 import { TestApiComponent } from './test-api/test-api.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { HomePageComponent } from './home-page/home-page.component';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { ConfirmFormComponent } from './confirm-form/confirm-form.component';
 import { TestComponent } from './test/test.component';
@@ -32,7 +31,6 @@ import {MatCardModule, MatCard} from '@angular/material/card';
     SelectionComponent,
     TestApiComponent,
     PageNotFoundComponent,
-    HomePageComponent,
     ConfirmFormComponent,
     TestComponent,
   

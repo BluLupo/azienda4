@@ -1,13 +1,12 @@
 # azienda4
 ## How to start the project
-<br>
-Use this command: <b>ng new azienda4</b>
-<br>
-and use this command: <b>ng add @angular/material</b>
-<br>
-Put <b>/src</b> in your project
-<br>
-Start the project: <b>ng serve</b>
+git clone https://github.com/hersel91/azienda4
+cd azienda4
+npm install
+
+### Start project
+npm start or ng serve
+
 
 ### Demo
 https://corso.hersel.it

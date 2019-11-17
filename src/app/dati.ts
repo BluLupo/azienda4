@@ -1,12 +1,10 @@
 export class Dati {
-    userId:number;
-    id:number;
-    title:string;
-    body:string;
+    ID: number;
+    name_text: string;
+    surname_text: string;
+    email_text: string;
 }
 export class DatiPost{
-    
-
 
 
 

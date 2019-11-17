@@ -8,13 +8,13 @@ import { Dati } from '../dati';
 })
 export class TestApiComponent implements OnInit {
 
-  constructor(private serv: RestAPIService) { }
+  constructor(private serv: RestAPIService) {}
 
-  dati:Dati[];
+  data: Dati[];
 
   ngOnInit() {
-    this.serv.testing()
-    this.dati=this.serv.getDati()
+    this.serv.get().subscribe(data => this.data = data);
+    // this.serv.get().then(data => this.data = data).catch(e => console.log(e));
   }
 
 }

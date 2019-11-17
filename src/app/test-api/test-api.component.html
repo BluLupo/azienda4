@@ -1,2 +1,56 @@
-<h3>ESEMPIO DI UTILIZZO DELLE REST API (METODO GET)</h3>
-<p *ngFor="let d of dati">{{d.title}}</p>
+<h5>ESEMPIO DI UTILIZZO DELLE REST API (METODO GET)</h5>
+<!--TABELLA DEI DATI-->
+<table>
+    <tr>
+        <th>
+            ID 
+        </th>
+        <th>
+            NOME 
+        </th>
+        <th>
+            COGNOME 
+        </th>
+        <th>
+            EMAIL 
+        </th>
+    </tr>
+    <tr *ngFor="let d of data">
+        <td>
+            {{ d.ID }}
+        </td>
+        <td>
+            {{ d.name_text }}
+        </td>
+        <td>
+            {{ d.surname_text }}
+        </td>
+        <td>
+            {{ d.email_text }}
+        </td>
+    </tr>
+</table>
+
+<hr class="separator">
+
+<!--COPYRIGHT-->
+<h5>
+    API REST REALIZZATA DA
+    <a href="https://hersel.it">HERSEL GIANNELLA</a>
+</h5>
+<p>
+    La struttura di questa semplice API funziona come descritto nel seguente schema:
+</p>
+<img class="responsive-img" src="https://hersel.it/storage/schema.png">
+
+<hr class="separator">
+
+<h5>ALCUNI LINK UTILI</h5>
+<p>
+    Origine API =>
+    <a href="https://antares.hersel.it/testapi.php">Server Antares</a>
+</p>
+<p>
+    Struttura Tabella del Database =>
+    <a href="https://cloud.hersel.it/s/L3MnTXrfMQYLN4g">SCARICA FILE SQL</a>
+</p>

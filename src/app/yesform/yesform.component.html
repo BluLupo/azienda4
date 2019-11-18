@@ -1,65 +1,62 @@
 <div class="container">
   <form [formGroup]="profileForms" (ngSubmit)="onSubmit()">
     <h4>Quali strumenti conoscevi già fra quelli utilizzati durante Young Talent In Action?</h4>
-    <!--<mat-checkbox>Check me!</mat-checkbox>-->
+    
+    
     <div class="content">
-      
-
-      <p>
-        <label>
-          <input formControlName="checkboxHTML" type="checkbox" />
-          <span>HTML</span>
-        </label>
-      </p>
-      <p>
-        <label>
-          <input formControlName="checkboxJS" type="checkbox" />
-          <span>JAVASCRIPT</span>
-        </label>
-      </p>
-      <p>
-        <label>
-          <input formControlName="checkboxCSS" type="checkbox" />
-          <span>CSS</span>
-        </label>
-      </p>
-      <p>
-        <label>
-          <input formControlName="checkboxANGULAR" type="checkbox" />
-          <span>ANGULAR</span>
-        </label>
-      </p>
-      
-      
+        <mat-card>
+            <mat-card-content>
+      <section class="example-section">
+        <mat-checkbox class="example-margin" 
+        formControlName="checkboxHTML">HTML
+      </mat-checkbox>
         
-        <p>
-          <label>
-            <input formControlName="checkboxSDS" type="checkbox" />
-            <span>STRUMENTI DI SVILUPPO BROWSER</span>
-          </label>
-        </p>
+      <mat-checkbox class="example-margin" 
+        formControlName="checkboxJS">JAVASCRIPT
+      </mat-checkbox>
+        
+      <mat-checkbox class="example-margin" 
+        formControlName="checkboxCSS">CSS
+      </mat-checkbox>
+        
+      
+      </section>
+      <section>
+          <mat-checkbox class="example-margin" 
+          formControlName="checkboxANGULAR">ANGULAR
+          </mat-checkbox>
+            
+          <mat-checkbox class="example-margin" 
+          formControlName="checkboxSDS">STRUMENTI DI SVILUPPO BROWSER
+          </mat-checkbox>
+  
+      </section>  
+      </mat-card-content>
+</mat-card>
 
+
+  
     </div>
     
     <br>
     <!--SUGGERIMENTI-->
     <h4>Quale suggerimento daresti quale miglioramento per una prossima edizione di Young Talent In Action?</h4>
-    <div class="form-group">
-      <label for="textarea_poll">Suggerimenti</label>
-      <textarea formControlName="textarea_poll" class="materialize-textarea" 
-      id="exampleFormControlTextarea1" rows="3" name="text1"></textarea>
-    </div>
-     <div *ngIf="profileForms.invalid && (profileForms.dirty || profileForms.touched)"
+    <mat-form-field class="example-full-width" for="textarea_poll">
+      <textarea matInput placeholder="Suggerimenti" formControlName="textarea_poll"></textarea>
+    </mat-form-field>
+    <div *ngIf="profileForms.invalid && (profileForms.dirty || profileForms.touched)"
     class="alert alert-danger">
-    <div *ngIf="profileForms.get('textarea_poll').errors.required">
-       Questo campo è obbligatorio!
-    </div>
-    <div *ngIf="profileForms.get('textarea_poll').errors.minlength">
-       Il campo suggerimenti deve contenere almeno 30 caratteri!
-    </div>
-  </div>
+     <!--DIV CAMPO OBBLIGATORIO-->
+     <div *ngIf="profileForms.get('textarea_poll').errors.required">
+        Questo campo è obbligatorio!
+     </div>
+     <!--DIV MAX 30 CARATTERI-->
+     <div *ngIf="profileForms.get('textarea_poll').errors.minlength">
+        Il campo suggerimenti deve contenere almeno 30 caratteri!
+     </div>
+   </div>
     <br>
     <button type="submit" class="waves-effect waves-light btn-large"
     [disabled]="!profileForms.valid">Invia</button>
-    </form>
+  </form>
 </div>

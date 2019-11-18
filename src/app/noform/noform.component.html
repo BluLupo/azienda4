@@ -14,8 +14,14 @@
                         <h4>Qual è stata la motivazione che ti ha spinto a partecipare a partecipare a Young
                                 Talent In Action?</h4>
                           <div class="form-group">
-                                <label for="textarea_poll_noform">Suggerimenti</label>
-                                <textarea formControlName="textarea_poll_noform" class="materialize-textarea" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <mat-form-field class="example-full-width" 
+                                for="textarea_poll_noform">
+                                    <textarea name="noform-input"
+                                    formControlName="textarea_poll_noform" 
+                                    matInput placeholder="Suggerimenti">
+
+                                    </textarea>
+                                  </mat-form-field>
                               </div>
                               <h4>Quale strumento hai trovato più difficoltoso fra quelli utilizzati durante Young Talent
                                     In Action?</h4>

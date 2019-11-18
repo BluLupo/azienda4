@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormsModule }   from '@angular/forms';
+import { FormsModule }  from '@angular/forms';
 import {ReactiveFormsModule} from '@angular/forms';
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 import { YesformComponent } from './yesform/yesform.component';
@@ -15,11 +15,13 @@ import { TestApiComponent } from './test-api/test-api.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ConfirmFormComponent } from './confirm-form/confirm-form.component';
 
-//ANGULAR-MATERIAL IMPORT
+//ANGULAR-MATERIAL-IMPORT
 import {MatSelectModule} from '@angular/material/select';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatCardModule} from '@angular/material/card';
 import {MatTableModule} from '@angular/material/table';
+import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,6 @@ import {MatTableModule} from '@angular/material/table';
     TestApiComponent,
     PageNotFoundComponent,
     ConfirmFormComponent,
-  
   ],
   imports: [
     BrowserModule,
@@ -43,7 +44,9 @@ import {MatTableModule} from '@angular/material/table';
     HttpClientModule,
     MatCheckboxModule,
     MatCardModule,
-    MatTableModule
+    MatTableModule,
+    MatButtonModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

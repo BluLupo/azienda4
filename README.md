@@ -5,8 +5,12 @@ git clone https://github.com/hersel91/azienda4
 cd azienda4
 <br>
 npm install
+<br>
+npm install -g json-server
 
 ### Start project
+json-server --watch json-data/db.json
+<br>
 npm start/ng serve
 
 

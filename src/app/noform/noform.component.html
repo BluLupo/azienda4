@@ -1,11 +1,4 @@
 <!--FORM 2 , SELECT NO-->
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('select');
-    var instances = M.FormSelect.init(elems, options);
-  });
-  var instance = M.FormSelect.getInstance(elem);
-</script>
 <div class="container" *ngIf="!options">
         <form [formGroup]="profileForms" (ngSubmit)="onSubmit()">
          <script>
@@ -25,7 +18,16 @@
                               </div>
                               <h4>Quale strumento hai trovato più difficoltoso fra quelli utilizzati durante Young Talent
                                     In Action?</h4>
-                                <app-selection></app-selection>
+                                    
+                                    <mat-form-field>
+                                      <select matNativeControl required 
+                                      formControlName="select_no_form">
+                                        <option>{{select1}}</option>
+                                        <option>{{select2}}</option>
+                                        <option>{{select3}}</option>
+                                        <option>{{select4}}</option>
+                                      </select>
+                                    </mat-form-field>
                                 <br />
                 <button type="submit" class="waves-effect waves-light btn-large"
                 [disabled]="!profileForms.valid">Invia</button>

@@ -1,0 +1,48 @@
+{
+  "noform": [
+    {
+      "id": "1",
+      "textarea_poll_noform": "",
+      "select_no_form": ""
+    },
+    {
+      "textarea_poll_noform": "skdjakldjkajskjdkajkjsdkljakljsdkljakldjsdkljkldajklsjklajdalk",
+      "select_no_form": "HTML",
+      "id": "i0tzV3o"
+    },
+    {
+      "textarea_poll_noform": "klsdjkljskljdklsjkldjklsjdlskjdklsjkldjklsjdkljskljdkljskljdkljskldjklsjdklsjkldjklsjdklsjsdjkljdklsdj",
+      "select_no_form": "CSS",
+      "id": "jKeo0Qm"
+    }
+  ],
+  "yesform": [
+    {
+      "id": "2",
+      "textarea_poll": "",
+      "checkboxHTML": "",
+      "checkboxJS": "",
+      "checkboxCSS": "",
+      "checkboxANGULAR": "",
+      "checkboxSDS": ""
+    },
+    {
+      "textarea_poll": "sdjlkjkjdkjksjkdjksjdkskdjksjdklsjdkl",
+      "checkboxHTML": null,
+      "checkboxJS": true,
+      "checkboxCSS": null,
+      "checkboxANGULAR": null,
+      "checkboxSDS": null,
+      "id": "XXh9kaO"
+    },
+    {
+      "textarea_poll": "wdjkldjkljsdkljskldjklsjldjklsjdkljskljdkljs",
+      "checkboxHTML": null,
+      "checkboxJS": true,
+      "checkboxCSS": true,
+      "checkboxANGULAR": null,
+      "checkboxSDS": true,
+      "id": "Jajko5Q"
+    }
+  ]
+}

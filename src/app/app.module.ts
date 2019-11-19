@@ -10,7 +10,6 @@ import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 import { YesformComponent } from './yesform/yesform.component';
 import { NoformComponent } from './noform/noform.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SelectionComponent } from './selection/selection.component';
 import { TestApiComponent } from './test-api/test-api.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ConfirmFormComponent } from './confirm-form/confirm-form.component';
@@ -29,7 +28,6 @@ import {MatInputModule} from '@angular/material/input';
     ReactiveformComponent,
     YesformComponent,
     NoformComponent,
-    SelectionComponent,
     TestApiComponent,
     PageNotFoundComponent,
     ConfirmFormComponent,

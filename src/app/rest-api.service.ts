@@ -20,6 +20,6 @@ export class RestAPIService {
     };
 
     //RICHIAMO UN API
-    return this.http.get<Dati[]>("https://antares.hersel.it/testapi.php");
+    return this.http.get<Dati[]>("https://antares.hersel.it/api.php");
   }
 }

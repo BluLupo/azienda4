@@ -12,7 +12,3 @@ npm install -g json-server
 json-server --watch json-data/db.json
 <br>
 npm start/ng serve
-
-
-### Demo
-https://corso.hersel.it
